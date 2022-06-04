@@ -41,7 +41,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="cetak_invoice" class="nav-link" target="_blank">
               <i class="fa fa-print"></i>
               <b>Cetak Invoice</b>
             </a>

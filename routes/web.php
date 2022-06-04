@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\InvoiceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -43,4 +44,10 @@ Route::get('/detail', function () {
 
 Route::get('/matakuliah', function () {
     return view('matakuliah');
+});
+
+Route::get('/cetak_invoice', [InvoiceController::class, 'cetak_pdf']);
+
+Route::get('/invoice', function () {
+    return view('invoice');
 });
