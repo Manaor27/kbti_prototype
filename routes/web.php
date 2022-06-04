@@ -32,3 +32,15 @@ Route::get('/kelas', function () {
 Route::get('/dosen', function () {
     return view('dosen');
 });
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});
+
+Route::get('/detail', function () {
+    return view('detail');
+});
+
+Route::get('/matakuliah', function () {
+    return view('matakuliah');
+});

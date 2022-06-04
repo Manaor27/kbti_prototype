@@ -1,0 +1,377 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Detail Mahasiswa</title>
+  <link rel="icon" href="{{ asset('img/logo.jpg') }}" type="image/jpg" />
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="{{ asset('style/plugins/fontawesome-free/css/all.min.css') }}">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="{{ asset('style/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('style/plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('style/plugins/datatables-buttons/css/buttons.bootstrap4.min.css') }}">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="{{ asset('style/dist/css/adminlte.min.css') }}">
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link" href="#" data-toggle="dropdown" role="button">
+          <i class="fas fa-user"> Nama User</i>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              Jabatan
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="/dosen" class="dropdown-item dropdown-footer"><b>Keluar</b></a>
+          </div>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="dashboard" class="brand-link">
+      <img src="{{ asset('img/logo.jpg') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">U T S</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="{{ asset('img/user.jpg') }}" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">ID User</a>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item">
+            <a href="dashboard" class="nav-link">
+              <i class="nav-icon fas fa-file"></i>
+              <p>
+                Data Mahasiswa
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="matakuliah" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Data Matakuliah
+              </p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper" style="background: url('https://static.vecteezy.com/system/resources/previews/005/178/913/original/white-and-light-gray-diagonal-line-architecture-geometry-tech-abstract-subtle-background-illustration-eps-10-vector.jpg'); background-size: cover;">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Data Detail Mahasiswa</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="dashboard">Data Mahasiswa</a></li>
+              <li class="breadcrumb-item active">Data Mahasiswa</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">
+                  <i class="fas fa-text-width"></i>
+                  Data Diri
+                </h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <dl class="row">
+                  <dt class="col-sm-4">NIM</dt>
+                  <dd class="col-sm-8">XXX</dd>
+                  <dt class="col-sm-4">Nama</dt>
+                  <dd class="col-sm-8">Lorem ipsum dolor sit</dd>
+                  <!--dd class="col-sm-8 offset-sm-4">Donec id elit non mi porta gravida at eget metus.</dd-->
+                  <dt class="col-sm-4">Angkatan</dt>
+                  <dd class="col-sm-8">00</dd>
+                  <dt class="col-sm-4">Batas SKS yang dapat diambil</dt>
+                  <dd class="col-sm-8">3</dd>
+                </dl>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- ./col -->
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                <table id="example1" class="table table-bordered table-striped">
+                  <thead>
+                  <tr>
+                    <th>Kode</th>
+                    <th>Matakuliah</th>
+                    <th>SKS</th>
+                    <th>Kelas</th>
+                    <th>Aksi</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>XXX</td>
+                    <td>Lorem ipsum dolor sit</td>
+                    <td>1</td>
+                    <td>A</td>
+                    <td>
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-sm">
+                        <i class="fas fa-pen"></i>
+                      </button>
+                      <a class="btn btn-danger">
+                        <i class="fas fa-trash"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>XXX</td>
+                    <td>Lorem ipsum dolor sit</td>
+                    <td>1</td>
+                    <td>A</td>
+                    <td>
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-sm">
+                        <i class="fas fa-pen"></i>
+                      </button>
+                      <a class="btn btn-danger">
+                        <i class="fas fa-trash"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>XXX</td>
+                    <td>Lorem ipsum dolor sit</td>
+                    <td>1</td>
+                    <td>A</td>
+                    <td>
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-sm">
+                        <i class="fas fa-pen"></i>
+                      </button>
+                      <a class="btn btn-danger">
+                        <i class="fas fa-trash"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>XXX</td>
+                    <td>Lorem ipsum dolor sit</td>
+                    <td>1</td>
+                    <td>B</td>
+                    <td>
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-sm">
+                        <i class="fas fa-pen"></i>
+                      </button>
+                      <a class="btn btn-danger">
+                        <i class="fas fa-trash"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>XXX</td>
+                    <td>Lorem ipsum dolor sit</td>
+                    <td>1</td>
+                    <td>B</td>
+                    <td>
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-sm">
+                        <i class="fas fa-pen"></i>
+                      </button>
+                      <a class="btn btn-danger">
+                        <i class="fas fa-trash"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>XXX</td>
+                    <td>Lorem ipsum dolor sit</td>
+                    <td>1</td>
+                    <td>B</td>
+                    <td>
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-sm">
+                        <i class="fas fa-pen"></i>
+                      </button>
+                      <a class="btn btn-danger">
+                        <i class="fas fa-trash"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>XXX</td>
+                    <td>Lorem ipsum dolor sit</td>
+                    <td>1</td>
+                    <td>B</td>
+                    <td>
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-sm">
+                        <i class="fas fa-pen"></i>
+                      </button>
+                      <a class="btn btn-danger">
+                        <i class="fas fa-trash"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>XXX</td>
+                    <td>Lorem ipsum dolor sit</td>
+                    <td>1</td>
+                    <td>A</td>
+                    <td>
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-sm">
+                        <i class="fas fa-pen"></i>
+                      </button>
+                      <a class="btn btn-danger">
+                        <i class="fas fa-trash"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+        <div class="modal fade" id="modal-sm">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Ubah Grup</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="form-group">
+                <select class="form-control">
+                  <option>A</option>
+                  <option>B</option>
+                  <option>C</option>
+                </select>
+              </div>
+            </div>
+            <div class="modal-footer justify-content-between">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
+              <button type="button" class="btn btn-primary">Simpan</button>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal -->
+      </div>
+      <!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+      <b>Version</b> 3.1.0
+    </div>
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="{{ asset('style/plugins/jquery/jquery.min.js') }}"></script>
+<!-- Bootstrap 4 -->
+<script src="{{ asset('style/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<!-- DataTables  & Plugins -->
+<script src="{{ asset('style/plugins/datatables/jquery.dataTables.min.js') }}"></script>
+<script src="{{ asset('style/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+<script src="{{ asset('style/plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
+<script src="{{ asset('style/plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
+<script src="{{ asset('style/plugins/datatables-buttons/js/dataTables.buttons.min.js') }}"></script>
+<script src="{{ asset('style/plugins/datatables-buttons/js/buttons.bootstrap4.min.js') }}"></script>
+<script src="{{ asset('style/plugins/jszip/jszip.min.js') }}"></script>
+<script src="{{ asset('style/plugins/pdfmake/pdfmake.min.js') }}"></script>
+<script src="{{ asset('style/plugins/pdfmake/vfs_fonts.js') }}"></script>
+<script src="{{ asset('style/plugins/datatables-buttons/js/buttons.html5.min.js') }}"></script>
+<script src="{{ asset('style/plugins/datatables-buttons/js/buttons.print.min.js') }}"></script>
+<!-- AdminLTE App -->
+<script src="{{ asset('style/dist/js/adminlte.min.js') }}"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="{{ asset('style/dist/js/demo.js') }}"></script>
+<!-- Page specific script -->
+<script>
+  $(function () {
+    $("#example1").DataTable({
+      "responsive": true, "lengthChange": false, "autoWidth": false,
+      "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+  });
+</script>
+</body>
+</html>

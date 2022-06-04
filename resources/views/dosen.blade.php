@@ -22,7 +22,7 @@
       <a href="#" class="h1"><b>LOGIN KAPRODI</b></a>
     </div>
     <div class="card-body">
-      <form action="/home">
+      <form action="/dashboard">
         <div class="input-group mb-3">
           <input type="text" class="form-control" placeholder="ID">
           <div class="input-group-append">
