@@ -19,7 +19,7 @@
   <!-- /.login-logo -->
   <div class="card card-outline card-primary">
     <div class="card-header text-center">
-      <a href="#" class="h1"><b>LOGIN MAHASISWA</b></a>
+      <a href="#" class="h1"><b>SIREMA</b><br>Login Mahasiswa</a>
     </div>
     <div class="card-body">
       <form action="/home">

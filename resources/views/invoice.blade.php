@@ -72,7 +72,7 @@
                 </tr>
                 <tr>
                     <td colspan="2">Total Variabel</td>
-                    <td colspan="3">24 x : Rp 000.000</td>
+                    <td colspan="3">: 24 x Rp 000.000</td>
                 </tr>
                 <tr>
                     <td colspan="2">&nbsp;</td>
