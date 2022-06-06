@@ -19,12 +19,12 @@
   <!-- /.login-logo -->
   <div class="card card-outline card-primary">
     <div class="card-header text-center">
-      <a href="#" class="h1"><b>SIREMA</b><br>Login Mahasiswa</a>
+      <a href="#" class="h1"><img src="{{ asset('img/logo.jpg')}}" height="90"><br><b>SIREMAKU</b></a>
     </div>
     <div class="card-body">
       <form action="/home">
         <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="NIM">
+          <input type="text" class="form-control" placeholder="ID">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-id-badge"></span>
