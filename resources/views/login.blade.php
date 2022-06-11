@@ -40,8 +40,11 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block">Masuk</button>
+          <div class="col-6">
+            <button type="submit" class="btn btn-primary btn-block">Masuk MHS</button>
+          </div>
+          <div class="col-6">
+            <a href="dashboard" class="btn btn-primary btn-block">Masuk DSN</a>
           </div>
           <!-- /.col -->
         </div>
